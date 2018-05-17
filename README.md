@@ -33,6 +33,6 @@ for shpritz-node, or
 sudo python spritz.py
 ```
 ## Contact
-Having issues? drop me a line: eyal{dot}person{dot}shahar(at)gmail{dot}com
+Having issues? drop me a line: eyal {dot} person {dot} shahar (at) gmail {dot} com
 
 
