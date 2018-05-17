@@ -19,12 +19,12 @@ npm install
 ```
 and then run.
 
-# Running a project
+## Running a project
 The JavaScript dashboard does not require sudo privileges. It can be run like this:
 ```bash
 npm start
 ```
-Projects that need access to the serial port do need sudo rights:
+Projects that need access to the serial port do need sudo privileges:
 ```bash
 sudo npm start
 ```
@@ -32,6 +32,7 @@ for shpritz-node, or
 ```bash
 sudo python spritz.py
 ```
-
+## Contact
+Having issues? drop me a line: eyal{dot}person{dot}shahar(at)gmail{dot}com
 
 
