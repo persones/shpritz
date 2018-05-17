@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<header>
+	</header>
+	<body>
+		<h1>Shpritz!</h1>
+		<p>Distance: <span id="distance">N/A</span> cm</p>
+		<p>Shpritz: <span id="shpritz">N/A</span></p>
+		<button onmousedown="manualTrigger(true)" 
+						onmouseup="manualTrigger(false)" 
+						onmouseleave="manualTrigger(false)">
+			manual shpritz
+		</button>
+		
+		<script src="/socket.io/socket.io.js"></script>
+		<script>
+
+const socket = io.connect();
+socket.on("dashboard", (msg) => {
+	for (key in msg) {
+		document.getElementById(key).innerHTML = msg[key];
+	}
+});
+  
+function manualTrigger(state) {
+  socket.emit("dashboard", {man_trigger: state});
+}
+
+		</script>
+	</body>
+</html>

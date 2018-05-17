@@ -1,0 +1,16 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "Relays UDP messages to web dashboard via websocket",
+  "main": "udp_dashboard.js",
+  "scripts": {
+		"start": "node udp_dashboard.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eyal Shahar",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.0"
+  }
+}
